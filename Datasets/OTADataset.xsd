@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OTADataset" targetNamespace="http://tempuri.org/OTADataset.xsd" xmlns:mstns="http://tempuri.org/OTADataset.xsd" xmlns="http://tempuri.org/OTADataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OTADataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="OTADataset" msprop:Generator_DataSetName="OTADataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookingViewModel" msprop:Generator_RowEvHandlerName="BookingViewModelRowChangeEventHandler" msprop:Generator_RowDeletedName="BookingViewModelRowDeleted" msprop:Generator_RowDeletingName="BookingViewModelRowDeleting" msprop:Generator_RowEvArgName="BookingViewModelRowChangeEvent" msprop:Generator_TablePropName="BookingViewModel" msprop:Generator_RowChangedName="BookingViewModelRowChanged" msprop:Generator_RowChangingName="BookingViewModelRowChanging" msprop:Generator_TableClassName="BookingViewModelDataTable" msprop:Generator_RowClassName="BookingViewModelRow" msprop:Generator_TableVarName="tableBookingViewModel" msprop:Generator_UserTableName="BookingViewModel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="BookingId" msprop:Generator_ColumnPropNameInRow="BookingId" msprop:Generator_ColumnPropNameInTable="BookingIdColumn" msprop:Generator_ColumnVarNameInTable="columnBookingId" msprop:Generator_UserColumnName="BookingId" type="xs:string" minOccurs="0" />
+              <xs:element name="TravelDate" msprop:Generator_ColumnPropNameInRow="TravelDate" msprop:Generator_ColumnPropNameInTable="TravelDateColumn" msprop:Generator_ColumnVarNameInTable="columnTravelDate" msprop:Generator_UserColumnName="TravelDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Airline" msprop:Generator_ColumnPropNameInRow="Airline" msprop:Generator_ColumnPropNameInTable="AirlineColumn" msprop:Generator_ColumnVarNameInTable="columnAirline" msprop:Generator_UserColumnName="Airline" type="xs:string" minOccurs="0" />
+              <xs:element name="Route" msprop:Generator_ColumnPropNameInRow="Route" msprop:Generator_ColumnPropNameInTable="RouteColumn" msprop:Generator_ColumnVarNameInTable="columnRoute" msprop:Generator_UserColumnName="Route" type="xs:string" minOccurs="0" />
+              <xs:element name="TicketNumber" msprop:Generator_ColumnPropNameInRow="TicketNumber" msprop:Generator_ColumnPropNameInTable="TicketNumberColumn" msprop:Generator_ColumnVarNameInTable="columnTicketNumber" msprop:Generator_UserColumnName="TicketNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="PassengerName" msprop:Generator_ColumnPropNameInRow="PassengerName" msprop:Generator_ColumnPropNameInTable="PassengerNameColumn" msprop:Generator_ColumnVarNameInTable="columnPassengerName" msprop:Generator_UserColumnName="PassengerName" type="xs:string" minOccurs="0" />
+              <xs:element name="MobileNumber" msprop:Generator_ColumnPropNameInRow="MobileNumber" msprop:Generator_ColumnPropNameInTable="MobileNumberColumn" msprop:Generator_ColumnVarNameInTable="columnMobileNumber" msprop:Generator_UserColumnName="MobileNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Fare" msprop:Generator_ColumnPropNameInRow="Fare" msprop:Generator_ColumnPropNameInTable="FareColumn" msprop:Generator_ColumnVarNameInTable="columnFare" msprop:Generator_UserColumnName="Fare" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BookingViewModel" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
